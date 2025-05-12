@@ -4,13 +4,16 @@
  */
 package mx.itson.Tgpalmas.enums;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  *
  * @author luisantoniocamparubio
  */
 public enum TransactionType {
-    
+  @SerializedName("1")  
    INCOME,
+  @SerializedName("2")
    EXPENSE
     
 }

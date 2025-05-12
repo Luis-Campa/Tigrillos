@@ -4,87 +4,110 @@
  */
 package mx.itson.Tgpalmas.entities;
 
-import java.util.List;
+
+import com.google.gson.annotations.SerializedName;
 
 /**
  *
  * @author luisantoniocamparubio
  */
-public class AccountHolder {
+public class AccountHolder  {
 
     /**
-     * @return the product
+     * @return the code
      */
-    public String getProduct() {
-        return product;
+    public String getCode() {
+        return code;
     }
 
     /**
-     * @param product the product to set
+     * @param code the code to set
      */
-    public void setProduct(String product) {
-        this.product = product;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     /**
-     * @return the accountNumber
+     * @return the name
      */
-    public String getAccountNumber() {
-        return accountNumber;
+    public String getName() {
+        return name;
     }
 
     /**
-     * @param accountNumber the accountNumber to set
+     * @param name the name to set
      */
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**
-     * @return the currency
+     * @return the address
      */
-    public String getCurrency() {
-        return currency;
+    public String getAddress() {
+        return address;
     }
 
     /**
-     * @param currency the currency to set
+     * @param address the address to set
      */
-    public void setCurrency(String currency) {
-        this.currency = currency;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     /**
-     * @return the accountHolder
+     * @return the city
      */
-    public AccountHolder getAccountHolder() {
-        return accountHolder;
+    public String getCity() {
+        return city;
     }
 
     /**
-     * @param accountHolder the accountHolder to set
+     * @param city the city to set
      */
-    public void setAccountHolder(AccountHolder accountHolder) {
-        this.accountHolder = accountHolder;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     /**
-     * @return the transactions
+     * @return the taxpayerId
      */
-    public List<Transaction> getTransactions() {
-        return transactions;
+    public String getTaxpayerId() {
+        return taxpayerId;
     }
 
     /**
-     * @param transactions the transactions to set
+     * @param taxpayerId the taxpayerId to set
      */
-    public void setTransactions(List<Transaction> transactions) {
-        this.transactions = transactions;
+    public void setTaxpayerId(String taxpayerId) {
+        this.taxpayerId = taxpayerId;
     }
-  private String product;
-    private String accountNumber;
-    private String currency;
-    private AccountHolder accountHolder;
-    private List<Transaction> transactions;
+
+    /**
+     * @return the zipCode
+     */
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    /**
+     * @param zipCode the zipCode to set
+     */
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+    private String code;
+    private String name;
+    private String address;
+    private String city;
+    @SerializedName("taxpayer-id")
+    private String taxpayerId;
+     @SerializedName("zip-code")
+    private String zipCode;
+     
     
-}
+    
+
+    
+     }   
+

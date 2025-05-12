@@ -4,6 +4,10 @@
  */
 package mx.itson.Tgpalmas.entities;
 
+import com.google.gson.Gson;
+import com.google.gson.annotations.SerializedName;
+import java.util.List;
+
 /**
  *
  * @author luisantoniocamparubio
@@ -11,93 +15,92 @@ package mx.itson.Tgpalmas.entities;
 public class BankAccount {
 
     /**
-     * @return the code
+     * @return the accountHolder
      */
-    public String getCode() {
-        return code;
+    public AccountHolder getAccountHolder() {
+        return accountHolder;
     }
 
     /**
-     * @param code the code to set
+     * @param accountHolder the accountHolder to set
      */
-    public void setCode(String code) {
-        this.code = code;
+    public void setAccountHolder(AccountHolder accountHolder) {
+        this.accountHolder = accountHolder;
     }
 
     /**
-     * @return the name
+     * @return the product
      */
-    public String getName() {
-        return name;
+    public String getProduct() {
+        return product;
     }
 
     /**
-     * @param name the name to set
+     * @param product the product to set
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setProduct(String product) {
+        this.product = product;
     }
 
     /**
-     * @return the address
+     * @return the accountNumber
      */
-    public String getAddress() {
-        return address;
+    public String getAccountNumber() {
+        return accountNumber;
     }
 
     /**
-     * @param address the address to set
+     * @param accountNumber the accountNumber to set
      */
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
     }
 
     /**
-     * @return the city
+     * @return the currency
      */
-    public String getCity() {
-        return city;
+    public String getCurrency() {
+        return currency;
     }
 
     /**
-     * @param city the city to set
+     * @param currency the currency to set
      */
-    public void setCity(String city) {
-        this.city = city;
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+  
+    /**
+     * @return the transactions
+     */
+    public List<Transaction> getTransactions() {
+        return transactions;
     }
 
     /**
-     * @return the taxpayerId
+     * @param transactions the transactions to set
      */
-    public String getTaxpayerId() {
-        return taxpayerId;
+    public void setTransactions(List<Transaction> transactions) {
+        this.transactions = transactions;
     }
+    private String product;
+    @SerializedName("account-number")
+    private String accountNumber;
+    private String currency;
+    @SerializedName("account-holder")
+    private AccountHolder accountHolder;
+    private List<Transaction> transactions;
+    public static BankAccount desearelizar(String json){
+       
+        BankAccount a = new BankAccount();
+        try{
+            Gson gson = new Gson();
+            a = gson.fromJson(json, BankAccount.class);
+        }catch (Exception ex){
+            System.out.println("Error"+ ex.getMessage());
+        }
+        return a;
 
-    /**
-     * @param taxpayerId the taxpayerId to set
-     */
-    public void setTaxpayerId(String taxpayerId) {
-        this.taxpayerId = taxpayerId;
     }
-
-    /**
-     * @return the zipCode
-     */
-    public String getZipCode() {
-        return zipCode;
-    }
-
-    /**
-     * @param zipCode the zipCode to set
-     */
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
-    }
-    private String code;
-    private String name;
-    private String address;
-    private String city;
-    private String taxpayerId;
-    private String zipCode;
-    
 }

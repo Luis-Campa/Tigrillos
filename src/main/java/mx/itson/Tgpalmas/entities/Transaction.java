@@ -4,6 +4,8 @@
  */
 package mx.itson.Tgpalmas.entities;
 
+import mx.itson.Tgpalmas.enums.TransactionType;
+
 /**
  *
  * @author luisantoniocamparubio
@@ -69,20 +71,20 @@ public class Transaction {
     /**
      * @return the type
      */
-    public int getType() {
+    public TransactionType getType() {
         return type;
     }
 
     /**
      * @param type the type to set
      */
-    public void setType(int type) {
+    public void setType(TransactionType type) {
         this.type = type;
     }
-     private String date;
+    private String date;
     private String description;
     private String reference;
     private double amount;
-    private int type;
-
+    private TransactionType type;
+    
 }
