@@ -20,7 +20,7 @@ public class Transaction {
         return date;
     }
 
-    /**
+    /**the date the transaction occurred
      * @param date the date to set
      */
     public void setDate(Date date) {
@@ -35,7 +35,7 @@ public class Transaction {
         return description;
     }
 
-    /**
+    /**A description of the transaction occurred
      * @param description the description to set
      */
     public void setDescription(String description) {
@@ -49,7 +49,7 @@ public class Transaction {
         return reference;
     }
 
-    /**
+    /** A reference code for the transaction
      * @param reference the reference to set
      */
     public void setReference(String reference) {
@@ -63,7 +63,7 @@ public class Transaction {
         return amount;
     }
 
-    /**
+    /** the amount involved un the transaction
      * @param amount the amount to set
      */
     public void setAmount(double amount) {

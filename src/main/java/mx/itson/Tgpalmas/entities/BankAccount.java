@@ -75,7 +75,7 @@ public class BankAccount {
     }
 
   
-    /**
+    /**the list of trabsactions associated with this account
      * @return the transactions
      */
     public List<Transaction> getTransactions() {

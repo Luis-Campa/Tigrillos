@@ -13,14 +13,14 @@ import com.google.gson.annotations.SerializedName;
  */
 public class AccountHolder  {
 
-    /**
+    /** 
      * @return the code
      */
     public String getCode() {
         return code;
     }
 
-    /**
+    /** Unique code identifying the account holder
      * @param code the code to set
      */
     public void setCode(String code) {
@@ -34,7 +34,7 @@ public class AccountHolder  {
         return name;
     }
 
-    /**
+    /** the full name of the account holder
      * @param name the name to set
      */
     public void setName(String name) {
@@ -48,7 +48,7 @@ public class AccountHolder  {
         return address;
     }
 
-    /**
+    /** the address of the account holder
      * @param address the address to set
      */
     public void setAddress(String address) {
@@ -62,7 +62,7 @@ public class AccountHolder  {
         return city;
     }
 
-    /**
+    /** the city where the account holder resides
      * @param city the city to set
      */
     public void setCity(String city) {
@@ -76,7 +76,7 @@ public class AccountHolder  {
         return taxpayerId;
     }
 
-    /**
+    /** the taxpayer identification number of the account holder
      * @param taxpayerId the taxpayerId to set
      */
     public void setTaxpayerId(String taxpayerId) {
@@ -93,6 +93,7 @@ public class AccountHolder  {
     /** Sets the zip code for the address
      * @param zipCode The zip code to be assigned to the zipCode property
      */
+
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }

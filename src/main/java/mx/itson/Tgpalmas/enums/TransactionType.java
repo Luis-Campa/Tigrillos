@@ -12,8 +12,14 @@ import com.google.gson.annotations.SerializedName;
  */
 public enum TransactionType {
   @SerializedName("1")  
+          /**income financial movement
+           * @param INCOME option 1 of transaction type
+           */
    INCOME,
   @SerializedName("2")
+          /** expense financial movement
+           * @param EXPENSE option 2 of transaction type
+           */
    EXPENSE
     
 }

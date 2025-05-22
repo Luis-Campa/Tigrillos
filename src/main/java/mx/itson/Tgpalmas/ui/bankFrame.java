@@ -227,7 +227,7 @@ FileDialog fileDialog = new FileDialog(this, "Select file", FileDialog.LOAD);
                 }        // TODO add your handling code here:
     }//GEN-LAST:event_btnfileActionPerformed
 
-    /**
+    /** Main method to initialize and display the application UI
      * @param args the command line arguments
      */
     public static void main(String args[]) {
