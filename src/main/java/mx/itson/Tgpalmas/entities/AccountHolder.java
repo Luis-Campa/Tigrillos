@@ -90,8 +90,8 @@ public class AccountHolder  {
         return zipCode;
     }
 
-    /**
-     * @param zipCode the zipCode to set
+    /** Sets the zip code for the address.
+     * @param zipCode The zip code to be assigned to the zipCode property
      */
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;

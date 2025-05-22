@@ -82,8 +82,8 @@ public class BankAccount {
         return transactions;
     }
 
-    /**
-     * @param transactions the transactions to set
+    /** Sets the list of transactations for this instance.
+     * @param transactions The list of transactions to be assigned
      */
     public void setTransactions(List<Transaction> transactions) {
         this.transactions = transactions;
@@ -96,7 +96,12 @@ public class BankAccount {
     private AccountHolder accountHolder;
     private List<Transaction> transactions;
     
-    
+    /**
+     * Deserializes a BankAccount object from JSON String.
+     * @param json the JSON string containing the bank account data.
+     * @return A BankAccount object with the deserialized data, 
+     * or a new instance in case of an error
+     */
    
     public static BankAccount desearelizar(String json){
        

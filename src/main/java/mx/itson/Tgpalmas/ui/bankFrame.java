@@ -171,7 +171,7 @@ public class bankFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfileActionPerformed
-FileDialog fileDialog = new FileDialog(this, "Seleccionar Archivo", FileDialog.LOAD);
+FileDialog fileDialog = new FileDialog(this, "Select file", FileDialog.LOAD);
                 fileDialog.setVisible(true);
 
                 String directory = fileDialog.getDirectory();

@@ -77,8 +77,8 @@ public class Transaction {
         return type;
     }
 
-    /**
-     * @param type the type to set
+    /** Sets the transaction type for this instance
+     * @param type The transaction type to be assigned
      */
     public void setType(TransactionType type) {
         this.type = type;
