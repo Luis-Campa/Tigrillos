@@ -18,56 +18,56 @@ import java.util.List;
  */
 public class BankAccount {
 
-    /**
+    /** gets the account folder for this bank account
      * @return the accountHolder
      */
     public AccountHolder getAccountHolder() {
         return accountHolder;
     }
 
-    /**
+    /** sets the account holder for this bank account 
      * @param accountHolder the accountHolder to set
      */
     public void setAccountHolder(AccountHolder accountHolder) {
         this.accountHolder = accountHolder;
     }
 
-    /**
-     * @return the product
+    /** gets the product type of the bank account 
+     * @return the product type
      */
     public String getProduct() {
         return product;
     }
 
-    /**
-     * @param product the product to set
+    /** sets the product name
+     * @param product the name of the product to set
      */
     public void setProduct(String product) {
         this.product = product;
     }
 
-    /**
+    /**returns the account number 
      * @return the accountNumber
      */
     public String getAccountNumber() {
         return accountNumber;
     }
 
-    /**
+    /** sets the account holder
      * @param accountNumber the accountNumber to set
      */
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
-    /**
+    /** return the currency 
      * @return the currency
      */
     public String getCurrency() {
         return currency;
     }
 
-    /**
+    /** sets the currency 
      * @param currency the currency to set
      */
     public void setCurrency(String currency) {

@@ -13,7 +13,7 @@ import mx.itson.Tgpalmas.enums.TransactionType;
  */
 public class Transaction {
 
-    /**
+    /** return the date 
      * @return the date
      */
     public Date getDate() {
@@ -28,7 +28,7 @@ public class Transaction {
     }
 
     
-    /**
+    /** return the description 
      * @return the description
      */
     public String getDescription() {
@@ -42,7 +42,7 @@ public class Transaction {
         this.description = description;
     }
 
-    /**
+    /** return the reference 
      * @return the reference
      */
     public String getReference() {
@@ -56,7 +56,7 @@ public class Transaction {
         this.reference = reference;
     }
 
-    /**
+    /** return the amount
      * @return the amount
      */
     public double getAmount() {
@@ -70,7 +70,7 @@ public class Transaction {
         this.amount = amount;
     }
 
-    /**
+    /** return the type 
      * @return the type
      */
     public TransactionType getType() {

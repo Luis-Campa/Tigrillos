@@ -13,7 +13,7 @@ import com.google.gson.annotations.SerializedName;
  */
 public class AccountHolder  {
 
-    /** 
+    /** return the code 
      * @return the code
      */
     public String getCode() {
@@ -27,7 +27,7 @@ public class AccountHolder  {
         this.code = code;
     }
 
-    /**
+    /** return the name 
      * @return the name
      */
     public String getName() {
@@ -41,7 +41,7 @@ public class AccountHolder  {
         this.name = name;
     }
 
-    /**
+    /** return the address
      * @return the address
      */
     public String getAddress() {
@@ -55,7 +55,7 @@ public class AccountHolder  {
         this.address = address;
     }
 
-    /**
+    /** return the city 
      * @return the city
      */
     public String getCity() {
@@ -69,7 +69,7 @@ public class AccountHolder  {
         this.city = city;
     }
 
-    /**
+    /** return the taxpayerId 
      * @return the taxpayerId
      */
     public String getTaxpayerId() {
@@ -83,7 +83,7 @@ public class AccountHolder  {
         this.taxpayerId = taxpayerId;
     }
 
-    /**
+    /** return the zipCode
      * @return the zipCode
      */
     public String getZipCode() {
