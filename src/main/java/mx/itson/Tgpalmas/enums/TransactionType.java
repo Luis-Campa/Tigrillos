@@ -7,7 +7,7 @@ package mx.itson.Tgpalmas.enums;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Represents different transaction types
+ * Represents different transaction Types
  * @author luisantoniocamparubio
  */
 public enum TransactionType {

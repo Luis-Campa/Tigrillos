@@ -82,7 +82,7 @@ public class BankAccount {
         return transactions;
     }
 
-    /** Sets the list of transactations for this instance.
+    /** Sets the list of transactations for this Instance
      * @param transactions The list of transactions to be assigned
      */
     public void setTransactions(List<Transaction> transactions) {
